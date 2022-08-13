@@ -1,2 +1,6 @@
 # Build path
 build/
+
+*.filters
+
+*.vcxproj
