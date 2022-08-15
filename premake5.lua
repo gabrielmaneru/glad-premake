@@ -8,7 +8,6 @@ project "glad"
 
 	files
 	{
-        "include/**.h",
         "src/**.c"
     }
 
