@@ -1,7 +1,7 @@
 project "glad"
     kind "StaticLib"
     language "C"
-    staticruntime "on"
+    staticruntime "On"
 
 	targetdir ("build/" .. outputdir .. "-%{prj.name}/bin")
 	objdir ("build/" .. outputdir .. "-%{prj.name}/obj")
@@ -23,3 +23,9 @@ project "glad"
 		{ 
 			"_CRT_SECURE_NO_WARNINGS"
 		}
+
+	filter "configurations:debug"
+		symbols "On"
+				
+	filter "configurations:release"
+		optimize "On"
